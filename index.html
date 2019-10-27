@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>CodeJam-Canvas</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header-wrapper">
+            <button class="header__menu-btn"></button>
+            <a class="header__title" href="#">CodeJam-Canvas</a>
+            <button class="header__more-btn"></button>
+
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="tools">
+                <button class="tools__btn tools__btn--paint">Paint bucket</button>
+                <button class="tools__btn tools__btn--choose">Choose color</button>
+                <hr>
+                <button class="tools__btn tools__btn--move">Move</button>
+                <button class="tools__btn tools__btn--transform">Transform</button>
+            </section>
+            <section class="color">
+                <button class="color__btn color__btn--current">Current color</button>
+                <button class="color__btn color__btn--prev">Prev color</button>
+                <hr>
+                <button class="color__btn color__btn--red">Red</button>
+                <button class="color__btn color__btn--blue">Blue</button>
+            </section>
+            <section class="switcher">
+                <button id="btn-4" class="switcher__btn switcher__btn--4">4x4</button>
+                <button id="btn-32" class="switcher__btn switcher__btn--32">32x32</button>
+                <button id="btn-image" class="switcher__btn switcher__btn--image">Image</button>
+            </section>
+            <section class="canvas">
+                <canvas width="512" height="512" id="canvas"></canvas>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
